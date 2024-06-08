@@ -1,0 +1,9 @@
+.header {
+  @apply flex justify-center w-full;
+  > div {
+    @apply max-w-[1400px] w-full flex items-center justify-between;
+    > nav {
+      @apply flex items-center gap-2;
+    }
+  }
+}

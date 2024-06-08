@@ -1,0 +1,12 @@
+.form {
+  @apply max-w-[400px] w-full flex flex-col items-center justify-center py-4 gap-3 m-auto;
+  > h3 {
+    @apply text-center text-sm mb-3 flex items-center gap-2;
+  }
+  > input {
+    @apply text-base py-2.5 px-4 rounded-md w-full;
+  }
+  > button {
+    @apply text-base p-3 px-4 rounded-md w-full font-medium;
+  }
+}
