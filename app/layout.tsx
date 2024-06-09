@@ -14,8 +14,12 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+      <html lang="en" className='hidden'>
+      <head>
+        <link rel="preload" href="/atus_light.svg" as="image"/>
+        <link rel="preload" href="/atus_dark.svg" as="image"/>
+      </head>
       <body className={inter.className}>{children}</body>
-    </html>
+      </html>
   );
 }

@@ -2,7 +2,7 @@
 
 import MainLayout from "@/components/layouts/MainLayout";
 import Header from "@/components/ui/header";
-import Menu from "@/components/ui/menu";
+import Footer from "../../components/ui/footer";
 import MainInnerLayout from "@/components/layouts/MainInnerLayout";
 import {FC, ReactNode} from "react";
 import styles from './about.module.scss';
@@ -27,7 +27,7 @@ export default function AboutPage(): ReactNode {
                 <nav>
                     {socialNetwork.map(socialNetwork => {
                         return (
-                            <Link target='_blank' href={socialNetwork.link}>
+                            <Link key={socialNetwork.link} target='_blank' href={socialNetwork.link}>
                                 <socialNetwork.svg size={25}
                                                    className='stroke-[#F04939]'/>
                             </Link>
@@ -56,7 +56,7 @@ export default function AboutPage(): ReactNode {
                     </nav>
                 </div>
             </MainInnerLayout>
-            <Menu/>
+            <Footer/>
         </MainLayout>
     );
 

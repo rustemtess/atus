@@ -1,7 +1,7 @@
-import {IMenuItem} from "./menu.interface";
+import {IFooterItem} from "./footer.interface";
 import { LucideHome, LucideCircleUser, LucideLayoutGrid } from 'lucide-react';
 
-export const MenuList: Array<IMenuItem> = [
+export const FooterList: Array<IFooterItem> = [
     {
         name: 'Главная',
         href: '/home',

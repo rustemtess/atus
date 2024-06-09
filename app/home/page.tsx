@@ -2,7 +2,7 @@
 
 import MainLayout from "@/components/layouts/MainLayout";
 import Header from "@/components/ui/header";
-import Menu from "@/components/ui/menu";
+import Footer from "../../components/ui/footer";
 import MainInnerLayout from "@/components/layouts/MainInnerLayout";
 import {FC, ReactNode} from "react";
 import {IListInClassRoom, IStudentInClassRoom} from './home.interface';
@@ -58,7 +58,7 @@ export default function HomePage(): ReactNode {
                     />
                 </ListInClassRoom>
             </MainInnerLayout>
-            <Menu/>
+            <Footer/>
         </MainLayout>
     );
 };

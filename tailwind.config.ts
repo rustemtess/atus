@@ -8,6 +8,11 @@ const config: Config = {
   ],
   darkMode: 'selector',
   theme: {
+    screens: {
+      'sm': {
+        'max': '750px'
+      },
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
