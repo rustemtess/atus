@@ -1,11 +1,11 @@
-import { IMainInnerLayout } from './layout.interface';
+import {IMainInnerLayout} from './layout.interface';
 import {FC} from "react";
 import styles from './layout.module.scss';
 
-const MainInnerLayout: FC<IMainInnerLayout> = ( { children } ) => {
+const MainInnerLayout: FC<IMainInnerLayout> = ({children}) => {
     return (
-        <div className={ styles.layout }>
-            { children }
+        <div className={styles.layout}>
+            {children}
         </div>
     );
 };

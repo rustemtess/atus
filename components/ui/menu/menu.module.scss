@@ -1,5 +1,5 @@
 .menu {
-  @apply w-full max-w-[1400px] flex items-center justify-between px-5;
+  @apply w-full max-w-[1400px] flex items-center justify-between px-5 sticky py-2.5 bottom-0;
 }
 
 .linkButton {

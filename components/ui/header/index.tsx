@@ -1,17 +1,17 @@
 'use client';
 
-import { IHeader } from "./header.interface";
-import { FC, useEffect, useState } from "react";
+import {IHeader} from "./header.interface";
+import {FC, useEffect, useState} from "react";
 import styles from "./header.module.scss";
-import { LucideMoon, LucideSun, LucideBell } from "lucide-react";
+import {LucideMoon, LucideSun, LucideBell} from "lucide-react";
 import {changeTheme, changeToHTML, getTheme, isDark} from "@/theme.config";
 import Logo from "@/components/ui/logo";
 
-const Header: FC<IHeader> = ({ children, isAuth = false }) => {
+const Header: FC<IHeader> = ({children, isAuth = false}) => {
     const [changedTheme, setChangedTheme] = useState<string>(getTheme());
 
     useEffect(() => {
-        if(isDark()) changeToHTML(true);
+        if (isDark()) changeToHTML(true);
         else changeToHTML();
     }, []);
 
@@ -20,12 +20,12 @@ const Header: FC<IHeader> = ({ children, isAuth = false }) => {
     };
 
     return (
-        <header className={styles.header}>
+        <header className={`bg-white dark:bg-[#0A0A0C] ${styles.header}`}>
             <div>
-                <Logo isChangedTheme={changedTheme} />
+                <Logo isChangedTheme={changedTheme}/>
                 {children}
                 <nav>
-                    { (isAuth) &&
+                    {(isAuth) &&
                         <button
                             onClick={changeCurrentTheme}
                             className={'p-2 rounded-lg border border-[#E5E7EB] dark:border-gray-700'}

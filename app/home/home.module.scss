@@ -1,1 +1,21 @@
-.main
+.classroom {
+  @apply flex flex-col gap-3 mt-5 rounded-md w-full max-w-[400px] my-2;
+}
+
+.student {
+  @apply inline-block h-7 w-7 rounded-full;
+}
+
+.classroomTitle {
+  @apply flex flex-col text-xs gap-0.5;
+  > h1 {
+    @apply text-sm leading-5 mb-1 truncate;
+  }
+  > div {
+    @apply flex items-center gap-1 text-xs text-white;
+  }
+}
+
+.classroomList {
+  @apply flex -space-x-2 overflow-hidden;
+}
