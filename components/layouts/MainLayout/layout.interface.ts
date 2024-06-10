@@ -1,3 +1,4 @@
 export interface IMainLayout {
-    children?: React.ReactNode
+    children?: React.ReactNode,
+    themeDisable?: boolean
 };

@@ -4,7 +4,7 @@ import {IHeader} from "./header.interface";
 import {FC, useEffect, useState} from "react";
 import styles from "./header.module.scss";
 import {LucideMoon, LucideSun, LucideBell} from "lucide-react";
-import {changeTheme, initTheme, getTheme, isDark} from "@/theme.config";
+import {changeTheme, initTheme, getTheme} from "@/theme.config";
 import Logo from "@/components/ui/logo";
 
 const Header: FC<IHeader> = ({children, isAuth = false}) => {

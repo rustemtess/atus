@@ -10,6 +10,12 @@ import styles from './home.module.scss';
 
 export default function HomePage(): ReactNode {
 
+    {
+        /**
+         * ДОПИСАТЬ КОМПОНЕНТ ТЕКУЩЕГО ЗАНЯТИЯ
+         */
+    }
+
     const StudentInClassRoom: FC<IStudentInClassRoom> = ({img, name}) => {
         return (
             <img className={styles.student} src={img} width={30} height={30}/>

@@ -1,5 +1,5 @@
 import {IFooterItem} from "./footer.interface";
-import { LucideHome, LucideCircleUser, LucideLayoutGrid } from 'lucide-react';
+import { LucideHome, LucideCircleUser, LucideLayoutGrid, LucideAlbum } from 'lucide-react';
 
 export const FooterList: Array<IFooterItem> = [
     {
