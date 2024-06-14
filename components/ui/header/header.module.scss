@@ -1,5 +1,5 @@
 .header {
-  @apply flex justify-center w-full sticky top-0 py-3;
+  @apply flex flex-col items-center w-full sticky top-0 py-3;
   > div {
     @apply max-w-[1400px] w-full flex items-center justify-between;
     > nav {

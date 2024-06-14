@@ -6,6 +6,7 @@ import styles from "./header.module.scss";
 import {LucideMoon, LucideSun, LucideBell} from "lucide-react";
 import {changeTheme, initTheme, getTheme} from "@/theme.config";
 import Logo from "@/components/ui/logo";
+import Link from "next/link";
 
 const Header: FC<IHeader> = ({children, isAuth = false}) => {
     const [changedTheme, setChangedTheme] = useState<string>('light');
@@ -34,8 +35,7 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
                 {children}
                 <nav>
                     {isAuth && (
-                        <button
-                            onClick={changeCurrentTheme}
+                        <Link href='/notifications'
                             className={'p-2 rounded-lg border border-[#E5E7EB] dark:border-gray-700'}
                         >
                             {changedTheme === 'dark' ? (
@@ -43,7 +43,7 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
                             ) : (
                                 <LucideBell className={'stroke-[#67676C] dark:stroke-gray-300'} size={20}/>
                             )}
-                        </button>
+                        </Link>
                     )}
                     <button
                         onClick={changeCurrentTheme}

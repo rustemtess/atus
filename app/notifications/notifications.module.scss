@@ -1,0 +1,13 @@
+.notifications_title {
+    @apply text-lg mt-2;
+}
+
+.notifications_buttons {
+    @apply text-sm flex items-center gap-1 mt-5 border-b-[1px];
+    > button {
+        @apply pb-2 mb-[-1.5px] px-4;
+        > span {
+            @apply text-xs rounded-md bg-[#F04939] px-1.5 py-0.5 text-white;
+        }
+    }
+}
