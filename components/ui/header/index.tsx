@@ -31,7 +31,7 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
     return (
         <header className={`bg-white dark:bg-[#0A0A0C] ${styles.header}`}>
             <div>
-                <Logo key={changedTheme} isChangedTheme={changedTheme}/>
+                <Logo isChangedTheme={changedTheme}/>
                 {children}
                 <nav>
                     {isAuth && (
