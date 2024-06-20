@@ -3,14 +3,14 @@
 }
 
 .menuButton {
-  @apply flex items-center justify-start gap-5 w-full max-w-[340px] sm:max-w-[480px] p-6 py-4 rounded-lg;
+  @apply flex items-center justify-start gap-5 w-full max-w-[340px] sm:max-w-[480px] p-5 py-3 rounded-lg;
   > div {
     @apply flex flex-col;
     > p {
       @apply text-xs;
     }
     > h3 {
-      @apply text-lg font-medium mt-[-0.5em];
+      @apply text-base font-medium mt-[-0.5em];
     }
   }
 }

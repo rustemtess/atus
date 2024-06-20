@@ -22,12 +22,6 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
         setChangedTheme(newTheme);
     };
 
-    {
-        /**
-         * ИСПРАВИТЬ БАГ ПРИ ПЕРЕЗАГРУЗКЕ У ЛОГОТИПА ПОЯВЛЯЕТСЯ ОБВОДКА БЕЛАЯ
-         */
-    }
-
     return (
         <header className={`bg-white dark:bg-[#0A0A0C] ${styles.header}`}>
             <div>
@@ -35,7 +29,7 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
                 {children}
                 <nav>
                     {isAuth && (
-                        <Link href='/notifications'
+                        <Link title='Уведомления' href='/notifications'
                             className={'p-2 rounded-lg border border-[#E5E7EB] dark:border-gray-700'}
                         >
                             {changedTheme === 'dark' ? (
@@ -46,6 +40,7 @@ const Header: FC<IHeader> = ({children, isAuth = false}) => {
                         </Link>
                     )}
                     <button
+                        title='Смена темы'
                         onClick={changeCurrentTheme}
                         className={'p-2 rounded-lg border border-[#E5E7EB] dark:border-gray-700'}
                     >
